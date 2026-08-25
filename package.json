@@ -19,12 +19,15 @@
   "keywords": [
     "muse-code",
     "meta-muse",
+    "meta-muse-acp-adapter",
     "muse",
     "acp",
     "agent-client-protocol",
     "acpx",
     "acp-bridge",
+    "acp-stdio-bridge",
     "coding-agent",
+    "coding-agent-bridge",
     "stdio"
   ],
   "license": "MIT",

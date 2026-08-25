@@ -2,6 +2,9 @@
 
 `muse-code-acp-bridge` is an unofficial community adapter that exposes Meta Muse Code through the [Agent Client Protocol](https://agentclientprotocol.com/) over stdio. It is designed to run as an [acpx](https://github.com/openclaw/acpx) custom agent.
 
+In short, this is a Meta Muse ACP adapter and ACP stdio bridge for acpx custom
+agents and coding-agent workflows.
+
 This project is not affiliated with, endorsed by, or sponsored by Meta.
 
 ## Install
