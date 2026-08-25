@@ -1,7 +1,7 @@
 {
   "name": "muse-code-acp-bridge",
   "version": "0.1.0",
-  "description": "Unofficial Muse Code ACP stdio bridge for acpx.",
+  "description": "Unofficial Meta Muse Code ACP stdio bridge, acpx custom agent, and coding agent bridge.",
   "type": "module",
   "bin": {
     "muse-code-acp-bridge": "src/server.mjs"
