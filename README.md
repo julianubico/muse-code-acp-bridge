@@ -67,7 +67,9 @@ The tests use a deterministic fake Muse process selected with `MUSE_BRIDGE_FAKE_
 | `MUSE_ACP_SANDBOX` | Override the sandbox mode, if supported by the installed Muse version. |
 | `MUSE_ACP_APPROVAL_MODE` | Override the non-interactive approval mode, if supported by the installed Muse version. |
 
-Environment variables are passed to the child process as needed, but the bridge never writes credentials or environment values to logs.
+The bridge does not enumerate or persist environment values or credentials.
+Provider diagnostics may still be forwarded to stderr by Muse itself, so use
+the usual care when capturing process logs.
 
 ## Relationship to acpx
 
