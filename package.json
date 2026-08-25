@@ -1,0 +1,50 @@
+{
+  "name": "muse-code-acp-bridge",
+  "version": "0.1.0",
+  "description": "Unofficial Muse Code ACP stdio bridge for acpx.",
+  "type": "module",
+  "bin": {
+    "muse-code-acp-bridge": "src/server.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "keywords": [
+    "muse-code",
+    "meta-muse",
+    "muse",
+    "acp",
+    "agent-client-protocol",
+    "acpx",
+    "acp-bridge",
+    "coding-agent",
+    "stdio"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianubico/muse-code-acp-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/julianubico/muse-code-acp-bridge/issues"
+  },
+  "homepage": "https://github.com/julianubico/muse-code-acp-bridge#readme",
+  "scripts": {
+    "test": "node test/unit.test.mjs && node test/runner.test.mjs && node test/boundary.test.mjs && node test/concurrency.test.mjs && node test/stream.test.mjs && node test/tool-boundary.test.mjs",
+    "check": "node --check src/server.mjs && npm test",
+    "smoke": "bash scripts/smoke.sh",
+    "pack:check": "npm pack --dry-run --json",
+    "pack:integration": "bash scripts/packed-artifact-smoke.sh",
+    "compatibility": "bash scripts/muse-compatibility-smoke.sh"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+coverage/
+.DS_Store
+.env
+.env.*
+.npmrc
+.acpx/
+*.ndjson
+*.log
+tmp/
